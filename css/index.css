@@ -1,0 +1,501 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3399cc;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2678a9;
+}
+
+main {
+    padding: 80px 20px 20px; /* Adjusted for fixed header */
+}
+
+.hero {
+    background-color: #3399cc;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .services, .testimonials, .health-tips, .contact-info {
+    margin: 20px 0;
+}
+
+.service, .testimonial, .health-tips article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.testimonial-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.testimonial-form input, .testimonial-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.testimonial-form button {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-form button:hover {
+    background-color: #2678a9;
+}
+
+button {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2678a9;
+}
+
+footer {
+    background-color: #3399cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.appointment {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.appointment h2 {
+    margin-bottom: 20px;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment form label {
+    margin-bottom: 5px;
+}
+
+.appointment form input,
+.appointment form select,
+.appointment form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.appointment form button {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment form button:hover {
+    background-color: #2678a9;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #3399cc;
+    margin-bottom: 10px;
+}
+
+.member-info {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-info h3 {
+    margin-top: 0;
+}
+
+.member-info p {
+    margin-bottom: 0;
+}
+
+/* Animación de entrada para el formulario */
+.contact form {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact form.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos adicionales */
+.contact {
+    text-align: center;
+}
+
+.location {
+    margin-top: 50px;
+}
+
+/* Nuevo diseño del formulario */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 80%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2678a9;
+}
+
+/* Estilos para el catálogo */
+.catalogo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.catalogo-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #3399cc;
+    position: relative;
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.producto p {
+    color: #666;
+}
+
+.precio {
+    font-weight: bold;
+    color: #3399cc;
+    margin-top: 10px;
+}
+
+.agregar-carrito {
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #2678a9;
+}
+
+/* Estilos para el carrito */
+.carrito {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.carrito h2 {
+    text-align: center;
+    color: #4CAF50;
+    animation: slideInDown 1s;
+}
+
+.carrito-items {
+    margin-top: 2em;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+}
+
+.carrito-item img {
+    max-width: 100px;
+    margin-right: 1em;
+}
+
+.carrito-item h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.carrito-item .precio,
+.carrito-item .cantidad {
+    margin: 0 1em;
+}
+
+.carrito-item .eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carrito-resumen {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.carrito-resumen h3 {
+    margin-bottom: 1em;
+    color: #4CAF50;
+}
+
+.checkout {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.productos-carrito {
+    margin-top: 20px;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.producto-carrito img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.producto-carrito p {
+    margin: 0;
+}
+
+.vaciar-carrito {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vaciar-carrito:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para el menú desplegable del carrito */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .producto-carrito {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

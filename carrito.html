@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Veterinaria Doge</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo2.0.png" alt="Logo Veterinaria Doge">
+            <h1>Veterinaria Doge</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="consejos-de-salud.html">Consejos de Salud</a></li>
+                <li><a href="equipo-veterinario.html">Equipo Veterinario</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="catalogo.html" class="dropbtn">Catálogo</a>
+                    <div class="dropdown-content">
+                        <a href="carrito.html">Ver Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carrito">
+            <h2 class="carrito-titulo">Tu Carrito de Compras</h2>
+            <div class="carrito-productos" id="carrito-productos"></div>
+            <div class="carrito-total">
+                <h3>Total: <span id="total">$0.00</span></h3>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
+
+
+

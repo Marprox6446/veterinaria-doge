@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Veterinaria Doge</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo2.0.png" alt="Logo Veterinaria Doge">
+            <h1>Veterinaria Doge</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="consejos-de-salud.html">Consejos de Salud</a></li>
+                <li><a href="equipo-veterinario.html">Equipo Veterinario</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Servicios Veterinarios</h2>
+            <div class="service">
+                <h3>Consultas Generales</h3>
+                <p>Ofrecemos consultas generales para asegurar que tu mascota esté en óptimas condiciones de salud. Nuestro equipo realiza revisiones completas y personalizadas para detectar cualquier problema de salud de manera temprana.</p>
+            </div>
+            <div class="service">
+                <h3>Vacunación</h3>
+                <p>Mantenemos a tu mascota protegida contra enfermedades comunes con nuestro completo programa de vacunación. Nos aseguramos de que reciban las vacunas necesarias en el momento adecuado.</p>
+            </div>
+            <div class="service">
+                <h3>Cirugías</h3>
+                <p>Realizamos cirugías de rutina y especializadas con los más altos estándares de seguridad y cuidado. Nuestro equipo quirúrgico está altamente capacitado para llevar a cabo procedimientos desde esterilizaciones hasta cirugías complejas.</p>
+            </div>
+            <div class="service">
+                <h3>Diagnóstico por Imagen</h3>
+                <p>Contamos con equipos modernos para realizar radiografías y ecografías, permitiéndonos obtener diagnósticos precisos y rápidos para un tratamiento adecuado.</p>
+            </div>
+            <div class="service">
+                <h3>Odontología</h3>
+                <p>Proveemos atención odontológica completa, incluyendo limpiezas dentales y tratamientos para enfermedades periodontales, asegurando una buena salud oral para tu mascota.</p>
+            </div>
+        </section>
+        <section class="appointment">
+            <h2>Programar una Cita</h2>
+            <form id="appointment-form">
+                <label for="pet-name">Nombre de la Mascota:</label>
+                <input type="text" id="pet-name" required>
+
+                <label for="owner-name">Nombre del Dueño:</label>
+                <input type="text" id="owner-name" required>
+
+                <label for="service">Servicio:</label>
+                <select id="service" required>
+                    <option value="consultas-generales">Consultas Generales</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="cirugias">Cirugías</option>
+                    <option value="diagnostico-por-imagen">Diagnóstico por Imagen</option>
+                    <option value="odontologia">Odontología</option>
+                </select>
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Programar Cita</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Veterinaria Doge. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
